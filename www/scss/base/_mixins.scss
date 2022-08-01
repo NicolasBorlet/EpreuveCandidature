@@ -8,8 +8,9 @@
 }
 
 @mixin Title-Mobile {
+  font-family: Josefin, sans-serif;
   font-size: $heading-1-size;
-  font-weight: light;
+  font-weight: 300;
 }
 
 @mixin Button-Mobile {

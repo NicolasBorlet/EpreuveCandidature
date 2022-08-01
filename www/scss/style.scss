@@ -1,8 +1,8 @@
 //----- Base -----\\
-@import "base/reset.scss";
-@import "base/variable.scss";
-@import "base/mixins.scss";
-@import "base/fonts.scss";
+@import "base/_reset.scss";
+@import "base/_variable.scss";
+@import "base/_mixins.scss";
+@import "base/_fonts.scss";
 
 //----- Page -----\\
-@import "page/home.scss";
+@import "page/_home.scss";
