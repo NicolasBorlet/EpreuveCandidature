@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 html,
 body,
 div,
@@ -231,6 +233,9 @@ header .navigation.active .navigation_burger span:last-child {
   }
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
 body .pageHome {
   margin-left: 42px;
   margin-right: 43px;
