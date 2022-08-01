@@ -216,6 +216,13 @@ header .navigation.active .navigation_burger span:last-child {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
+  header {
+    padding-bottom: 27px;
+    padding-top: 14px;
+  }
+  header .navigation {
+    margin-right: 150px;
+  }
   header .navigation_burger {
     display: none;
   }
@@ -239,6 +246,10 @@ header .navigation.active .navigation_burger span:last-child {
   }
 }
 
+footer {
+  text-align: center;
+  background: #e6e6e6;
+}
 .homeInfo {
   margin-bottom: 87px;
   text-align: center;
@@ -343,6 +354,22 @@ header .navigation.active .navigation_burger span:last-child {
   .homeProduct {
     max-width: 366px;
     flex-direction: column;
+  }
+  .homeProduct_image {
+    max-width: 300px;
+  }
+  .homeProduct_button {
+    padding: 20px 40px 12px 40px;
+    border-radius: 40px;
+  }
+  .homeProduct_button button {
+    margin-top: 30px;
+  }
+  .homeProduct_title {
+    font-size: 30px;
+  }
+  .homeProduct_text {
+    font-size: 20px;
   }
   .homeProduct:nth-child(2) {
     margin-top: 0;
