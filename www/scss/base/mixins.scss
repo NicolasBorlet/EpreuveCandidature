@@ -1,0 +1,37 @@
+@mixin Header-Mobile {
+  font-size: $font-size-fat;
+}
+
+@mixin Basetext-Mobile {
+  font-size: $heading-4-size;
+  font-weight: normal;
+}
+
+@mixin Title-Mobile {
+  font-size: $heading-1-size;
+  font-weight: light;
+}
+
+@mixin Button-Mobile {
+  font-size: $heading-4-size;
+  font-weight: $typography-bold;
+}
+
+@mixin Header-Desktop {
+  font-size: 40px;
+}
+
+@mixin Basetext-Desktop {
+  font-size: $font-size-fat;
+  font-weight: normal;
+}
+
+@mixin Title-Desktop {
+  font-size: 80px;
+  font-weight: light;
+}
+
+@mixin Button-Desktop {
+  font-size: $font-size-fat;
+  font-weight: $typography-bold;
+}
