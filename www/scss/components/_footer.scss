@@ -1,7 +1,135 @@
 footer {
+  position: relative;
   text-align: center;
   background: $lightGrey;
+  margin-top: 148px;
+  padding-left: 42px;
+  padding-right: 43px;
+  padding-top: 27px;
+  padding-bottom: 23px;
+
+  input {
+    border-radius: 22px;
+    width: 100%;
+    height: 44px;
+    padding-left: 24px;
+    font-size: 16px;
+    margin-bottom: 9px;
+    border: none;
+
+    &::before {
+      content: "";
+      position: relative;
+      width: 100%;
+      height: 44px;
+      background: #dbceab;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 28px;
+  }
 
   @media screen and (min-width: $screen-md-min) {
+    padding-left: 400px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+    max-width: 50%;
+    border-radius: 0 138px 138px 0;
+
+    input {
+      width: 80%;
+      padding-left: 30px;
+      font-size: 20px;
+      margin-right: 18px;
+      margin-bottom: 0;
+
+      img {
+        margin-left: 18px;
+      }
+    }
+
+    form {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    img {
+      max-width: 43px;
+      max-height: 43px;
+    }
+  }
+}
+
+.footer {
+  &_title {
+    color: $brown;
+    font-size: 14px;
+    font-weight: $typography-bold;
+    line-height: 19px;
+    font-family: Josefin, sans-serif;
+    margin-bottom: 35px;
+  }
+
+  &_reseaux {
+    font-size: 14px;
+    font-family: Josefin, sans-serif;
+    font-weight: $typography-bold;
+    margin-top: 32px;
+    color: $ligthBrown;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_logo {
+    margin-top: 16px;
+
+    img {
+      max-height: 38px;
+      max-width: none;
+
+      &:last-child {
+        margin-left: 9px;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-md-min) {
+    position: relative;
+
+    &_title {
+      font-size: 20px;
+    }
+
+    &_reseaux {
+      flex-direction: row;
+      align-items: center;
+      font-size: 20px;
+
+      span {
+        margin-right: 46px;
+      }
+    }
+
+    &_logo {
+      margin-top: 0;
+    }
+  }
+}
+
+.footerContainer {
+  @media screen and (min-width: $screen-md-min) {
+    &::after {
+      content: url("../image/polygone.svg");
+      position: absolute;
+      right: -30px;
+      top: -50px;
+    }
   }
 }

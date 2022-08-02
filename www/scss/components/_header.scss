@@ -33,7 +33,17 @@ header {
       color: $brown;
       position: absolute;
       display: none;
-      transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out, opacity 100ms;
+
+      ul {
+        li {
+          margin-top: 10px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
     }
 
     &_burger {
@@ -55,17 +65,20 @@ header {
     &.active {
       .navigation {
         &_items {
-          margin-left: 42px;
+          padding-left: 42px;
           margin-right: 43px;
-          padding-top: 59px;
+          padding-top: 40px;
+          background: $white;
           right: 0;
           left: 0;
+          top: 46px;
           display: flex;
           height: 100vh;
-          width: 100%;
+          width: 100vw;
           z-index: 99;
-          transition: all 300ms ease-in-out;
+          transition: all 300ms ease-in-out, opacity 100ms;
         }
+
         &_burger {
           span {
             opacity: 0;

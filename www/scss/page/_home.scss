@@ -9,13 +9,13 @@ body {
   .pageHome {
     margin-left: 42px;
     margin-right: 43px;
-    height: 100vh;
 
     .home {
       &_image {
         height: 100%;
         display: flex;
         align-items: center;
+        min-height: 667px;
 
         img {
           position: absolute;
@@ -48,14 +48,15 @@ body {
           padding-top: 7px;
           padding-bottom: 12px;
 
-          &:last-child {
-            margin-top: 20px;
-            margin-bottom: 30px;
-          }
-
           button {
             @include Button-Mobile;
             color: $white;
+          }
+
+          &:last-child {
+            button {
+              margin-top: 30px;
+            }
           }
         }
       }
@@ -82,6 +83,10 @@ body {
   @media screen and (min-width: $screen-md-min) {
     .pageHome {
       .home {
+        &_image {
+          min-height: 100vh;
+        }
+
         &_content {
           @include Basetext-Desktop();
           max-width: 799px;
@@ -95,11 +100,23 @@ body {
             @include Button-Desktop();
             max-width: 259px;
             margin-right: 20px;
+
+            &:last-child {
+              button {
+                margin-top: 0;
+              }
+            }
           }
         }
 
         &_title {
           @include Title-Desktop();
+        }
+
+        &_links {
+          button {
+            margin-top: 0;
+          }
         }
       }
     }
